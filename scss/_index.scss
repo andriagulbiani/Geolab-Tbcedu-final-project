@@ -1,6 +1,5 @@
 body {
   @extend %my-container;
-  background-color: #ffffff;
 
   .index-header {
     @include goFlex(row, space-between, center);
@@ -36,4 +35,14 @@ body {
       }
     }
   }
+
+  .index-section-1 {
+
+    background: url(../images/index-background-image2.jpg);
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    
+  }
 }
+
