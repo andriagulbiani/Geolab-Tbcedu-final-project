@@ -1,0 +1,39 @@
+body {
+  @extend %my-container;
+  background-color: #ffffff;
+
+  .index-header {
+    @include goFlex(row, space-between, center);
+    margin: 0px auto;
+    padding: 0px 30px;
+    max-width: 1200px;
+    
+    .index-header-img {
+      img {
+        width: 80px;
+        height: auto;
+        padding: 20px 0px;
+      }
+    }
+
+    .index-header-button {
+      @include goFlex(row, space-between, center);
+      width: 150px;
+      
+      .login {
+        @include robotoFont(Roboto, 500, 14px, 20px);
+        color: #202125;
+      }
+
+      .signup {
+        @include robotoFont(Roboto, 500, 16px, 20px);
+        @include goFlex(row, center, center);
+        background-color: #ebf7fd;
+        color: #009de0;
+        width: 90px;
+        height: 46px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
