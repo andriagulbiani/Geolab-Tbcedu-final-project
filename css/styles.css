@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,9 +64,10 @@ a {
 
 body {
   width: 100%;
-  max-width: 1500px;
+  max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  overflow-x: clip;
 }
 
 body .index-header {
@@ -92,14 +94,14 @@ body .index-header .index-header-button {
   width: 150px;
 }
 body .index-header .index-header-button .login {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #202125;
 }
 body .index-header .index-header-button .signup {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -114,10 +116,183 @@ body .index-header .index-header-button .signup {
   height: 46px;
   border-radius: 10px;
 }
+body .index-header .index-header-button p {
+  margin-bottom: 0;
+}
 body .index-section-1 {
-  background: url(../images/index-background-image2.jpg);
   width: 100%;
+  background-color: #f5efc6;
+}
+body .index-section-1 .div2 {
+  overflow-x: clip;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 1200px;
   height: 640px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin: 0px auto;
+  background-color: #f5efc6;
+}
+body .index-section-1 .div2 .section-1-text {
+  padding: 0 30px;
+}
+body .index-section-1 .div2 .section-1-text .index-h1 {
+  width: 420px;
+}
+body .index-section-1 .div2 .section-1-text .index-h1 h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  color: #202125;
+}
+body .index-section-1 .div2 .section-1-text .text-box {
+  padding: 20px 0px;
+}
+body .index-section-1 .div2 .section-1-text .btn:link,
+body .index-section-1 .div2 .section-1-text .btn:visited {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+body .index-section-1 .div2 .section-1-text .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+body .index-section-1 .div2 .section-1-text .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+body .index-section-1 .div2 .section-1-text .btn-white {
+  background-color: #3D7941;
+  color: #202125;
+}
+body .index-section-1 .div2 .section-1-text .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+body .index-section-1 .div2 .section-1-text .btn-white::after {
+  background-color: #3d7941;
+}
+body .index-section-1 .div2 .section-1-text .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+body .index-section-1 .div2 .section-1-text .btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+body .index-section-1 .div2 .index-background-image {
+  width: 725px;
+}
+body .index-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 0px 100px 0px;
+}
+body .index-section-2 .did-u-know {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 660px;
+  text-align: center;
+}
+body .index-section-2 .did-u-know h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: normal;
+  padding: 45px 0px;
+  color: #202125;
+}
+body .index-section-2 .did-u-know p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+body .index-section-3 {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f2f3f5;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+body .index-section-3 .left {
+  padding: 30px;
+}
+body .index-section-3 .left .text-div h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 55px;
+  color: #202125;
+  width: 450px;
+}
+body .index-section-3 .left .text-div p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 500px;
+  color: #707174;
+  margin: 30px 0px;
+}
+body .index-section-3 .left .button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+body .index-section-3 .left .button-div .mac {
+  width: 200px;
+}
+body .index-section-3 .left .button-div .app-store {
+  display: none;
+}
+body .index-section-3 .left .button-div .play-store {
+  width: 200px;
+}
+body .index-section-3 .right img {
+  width: 600px;
+  position: absolute;
 }/*# sourceMappingURL=styles.css.map */

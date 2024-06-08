@@ -1,6 +1,7 @@
 %my-container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 100%;
     min-width: 320px;
     margin: 0 auto;
+    overflow-x: clip;
 }

@@ -6,8 +6,15 @@
     flex-wrap: $wrap;
 }
 
-@mixin robotoFont($font: "Roboto", $weight: 400, $size: 12px, $height: 10px) {
-    font-family: $font;
+@mixin robotoFont($weight: 400, $size: 12px, $height: 20px) {
+    font-family: "Roboto";
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin roundFont( $weight: 400, $size: 12, $height: normal) {
+    font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: $weight;
     font-size: $size;
     line-height: $height;

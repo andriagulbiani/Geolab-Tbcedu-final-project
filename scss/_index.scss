@@ -20,12 +20,12 @@ body {
       width: 150px;
       
       .login {
-        @include robotoFont(Roboto, 500, 14px, 20px);
+        @include robotoFont(500, 14px, 20px);
         color: #202125;
       }
 
       .signup {
-        @include robotoFont(Roboto, 500, 16px, 20px);
+        @include robotoFont(500, 16px, 20px);
         @include goFlex(row, center, center);
         background-color: #ebf7fd;
         color: #009de0;
@@ -33,16 +33,187 @@ body {
         height: 46px;
         border-radius: 10px;
       }
+
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 
   .index-section-1 {
-
-    background: url(../images/index-background-image2.jpg);
     width: 100%;
-    height: 640px;
-    object-fit: cover;
+    background-color: #f5efc6;
     
+    .div2 {
+      overflow-x: clip;
+      @include goFlex(row, center, center, $wrap: nowrap);
+      min-width: 1200px;
+      height: 640px;
+      margin: 0px auto;
+      background-color: #f5efc6;
+
+      .section-1-text {
+        padding: 0 30px;
+
+        .index-h1 {
+          width: 420px;
+
+          h1 {
+            @include roundFont(900, 60px, 60px);
+            color: #202125;
+          }
+        }
+        
+        .text-box {
+          padding: 20px 0px;
+        }
+
+        .btn:link,
+        .btn:visited {
+          @include roundFont(900, 20px);
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-white {
+            background-color: #3D7941;
+            color: #202125;
+        }
+        
+        .btn::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+        
+        .btn-white::after {
+            background-color: #3d7941;
+        }
+        
+        .btn:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        
+        .btn-animated {
+            animation: moveInBottom 5s ease-out;
+            animation-fill-mode: backwards;
+        }
+        
+        @keyframes moveInBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+      }
+
+    .index-background-image {
+      width: 725px;
+      }  
+    }
+  }
+
+  .index-section-2 {
+    @include goFlex(column, center, center);
+    padding: 150px 0px 100px 0px;
+
+    .did-u-know {
+      @include goFlex(column, center, center);
+      width: 660px;
+      text-align: center;
+  
+      h2 {
+        @include roundFont(900, 46px);
+        padding: 45px 0px;
+        color: #202125; 
+      }
+  
+      p {
+        @include robotoFont(400, 26px, 30px);
+      }
+    }
+  }
+
+  .index-section-3 {
+    margin: 50px 0px;
+    @include goFlex(row, flex-start, center);
+    background-color: #f2f3f5;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    .left {
+      padding: 30px;
+      .text-div {
+
+        h2 {
+          @include roundFont(900, 46px, 55px);
+          color: #202125; 
+          width: 450px;
+
+        }
+
+        p {
+          @include robotoFont(400, 16px, 30px);
+          width: 500px;
+          color: #707174;
+          margin: 30px 0px
+        }
+      }
+
+      .button-div {
+        @include goFlex(row, flex-start, center, $wrap: nowrap);
+
+
+        .mac {
+          width: 200px;
+        }
+
+        .app-store {
+          display: none;
+        }
+
+        .play-store {
+          width: 200px;
+        }
+      }
+    }
+
+    .right {
+
+      img {
+        width: 600px;
+        position: absolute;
+      }
+    }
   }
 }
 
