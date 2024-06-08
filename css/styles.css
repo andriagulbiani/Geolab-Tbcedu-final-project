@@ -174,7 +174,7 @@ body .index-section-1 .div2 .section-1-text .btn:active {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 body .index-section-1 .div2 .section-1-text .btn-white {
-  background-color: #3D7941;
+  background-color: #9bc070;
   color: #202125;
 }
 body .index-section-1 .div2 .section-1-text .btn::after {
@@ -190,7 +190,7 @@ body .index-section-1 .div2 .section-1-text .btn::after {
   transition: all 0.4s;
 }
 body .index-section-1 .div2 .section-1-text .btn-white::after {
-  background-color: #3d7941;
+  background-color: #9bc070;
 }
 body .index-section-1 .div2 .section-1-text .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -245,21 +245,29 @@ body .index-section-2 .did-u-know p {
   line-height: 30px;
 }
 body .index-section-3 {
-  margin: 50px 0px;
+  background-color: #f2f3f5;
+  width: 100%;
+  height: auto;
+  margin-bottom: 500px;
+  padding-left: 30px;
+}
+body .index-section-3 .index-section-3-div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #f2f3f5;
-  width: 100%;
-  max-width: 1200px;
+  flex-wrap: nowrap;
   margin: auto;
+  max-width: 1200px;
 }
-body .index-section-3 .left {
-  padding: 30px;
+body .index-section-3 .index-section-3-div .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-body .index-section-3 .left .text-div h2 {
+body .index-section-3 .index-section-3-div .left .text-div h2 {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 900;
   font-size: 46px;
@@ -267,7 +275,7 @@ body .index-section-3 .left .text-div h2 {
   color: #202125;
   width: 450px;
 }
-body .index-section-3 .left .text-div p {
+body .index-section-3 .index-section-3-div .left .text-div p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
@@ -276,23 +284,25 @@ body .index-section-3 .left .text-div p {
   color: #707174;
   margin: 30px 0px;
 }
-body .index-section-3 .left .button-div {
+body .index-section-3 .index-section-3-div .left .button-div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
 }
-body .index-section-3 .left .button-div .mac {
+body .index-section-3 .index-section-3-div .left .button-div .mac {
   width: 200px;
 }
-body .index-section-3 .left .button-div .app-store {
+body .index-section-3 .index-section-3-div .left .button-div .app-store {
   display: none;
 }
-body .index-section-3 .left .button-div .play-store {
+body .index-section-3 .index-section-3-div .left .button-div .play-store {
   width: 200px;
 }
-body .index-section-3 .right img {
-  width: 600px;
-  position: absolute;
+body .index-section-3 .index-section-3-div .right {
+  outline: dotted 1px gray;
+}
+body .index-section-3 .index-section-3-div .right img {
+  width: 1080px;
 }/*# sourceMappingURL=styles.css.map */

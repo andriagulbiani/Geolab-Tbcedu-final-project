@@ -91,7 +91,7 @@ body {
         }
         
         .btn-white {
-            background-color: #3D7941;
+            background-color: #9bc070;
             color: #202125;
         }
         
@@ -109,7 +109,7 @@ body {
         }
         
         .btn-white::after {
-            background-color: #3d7941;
+            background-color: #9bc070;
         }
         
         .btn:hover::after {
@@ -163,55 +163,61 @@ body {
   }
 
   .index-section-3 {
-    margin: 50px 0px;
-    @include goFlex(row, flex-start, center);
     background-color: #f2f3f5;
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    height: auto;
+    margin-bottom: 500px;
+    padding-left: 30px;
 
-    .left {
-      padding: 30px;
-      .text-div {
+    .index-section-3-div {
+      @include goFlex(row, flex-start, center, $wrap: nowrap);
+      margin: auto;
+      max-width: 1200px;
 
-        h2 {
-          @include roundFont(900, 46px, 55px);
-          color: #202125; 
-          width: 450px;
+      .left {
+        @include goFlex(column, flex-start, flex-start);
 
+        .text-div {
+
+          h2 {
+            @include roundFont(900, 46px, 55px);
+            color: #202125; 
+            width: 450px;
+
+          }
+
+          p {
+            @include robotoFont(400, 16px, 30px);
+            width: 500px;
+            color: #707174;
+            margin: 30px 0px
+          }
         }
 
-        p {
-          @include robotoFont(400, 16px, 30px);
-          width: 500px;
-          color: #707174;
-          margin: 30px 0px
+        .button-div {
+          @include goFlex(row, flex-start, center, $wrap: nowrap);
+
+
+          .mac {
+            width: 200px;
+          }
+
+          .app-store {
+            display: none;
+          }
+
+          .play-store {
+            width: 200px;
+          }
         }
       }
 
-      .button-div {
-        @include goFlex(row, flex-start, center, $wrap: nowrap);
+      .right {
+        outline: dotted 1px gray;
 
-
-        .mac {
-          width: 200px;
+        img {
+          width: 1080px;
         }
-
-        .app-store {
-          display: none;
-        }
-
-        .play-store {
-          width: 200px;
-        }
-      }
-    }
-
-    .right {
-
-      img {
-        width: 600px;
-        position: absolute;
       }
     }
   }
