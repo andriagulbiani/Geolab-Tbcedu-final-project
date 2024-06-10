@@ -300,9 +300,123 @@ body .index-section-3 .index-section-3-div .left .button-div .app-store {
 body .index-section-3 .index-section-3-div .left .button-div .play-store {
   width: 200px;
 }
-body .index-section-3 .index-section-3-div .right {
-  outline: dotted 1px gray;
-}
 body .index-section-3 .index-section-3-div .right img {
   width: 1080px;
+}
+body .index-section-4 {
+  margin: 200px 0px;
+  width: 100%;
+}
+body .index-section-4 .index-section-4-div .index-section-4-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+body .index-section-4 .index-section-4-div .index-section-4-text h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  color: #202125;
+}
+body .index-section-4 .index-section-4-div .index-apply-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .index-section-4 .index-section-4-div .index-apply-div div {
+  text-align: center;
+  margin: 50px 0px;
+}
+body .index-section-4 .index-section-4-div .index-apply-div div h4 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #202125;
+  padding: 20px 0px 10px 0px;
+}
+body .index-section-4 .index-section-4-div .index-apply-div div a {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #009de0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  padding-bottom: 4px;
+  position: relative;
+  text-decoration: none;
+  margin: auto auto 10px;
+}
+body .index-section-4 .index-section-4-div .index-apply-div div a:after {
+  border-bottom: 1px solid;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.01, 0.21, 0.35, 1);
+  width: 100%;
+  transform: translateZ(0);
+  background-color: #009de0;
+}
+body .index-footer {
+  width: 100%;
+  height: 450px;
+  background-color: #141414;
+}
+body .index-footer .index-footer-div .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .index-footer .index-footer-div .top div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 160px;
+}
+body .index-footer .index-footer-div .top div h3 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #a7a7a7;
+}
+body .index-footer .index-footer-div .top div p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
+body .index-footer .index-footer-div .top .footer-div-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body .index-footer .index-footer-div .top .footer-div-1 .wolt {
+  width: 100px;
+  color: white;
+}
+body .index-footer .index-footer-div .top .footer-div-1 .appstore {
+  width: 130px;
+  margin-top: 25px;
+}
+body .index-footer .index-footer-div .top .footer-div-1 .playstore {
+  width: 150px;
+  margin-left: -10px;
 }/*# sourceMappingURL=styles.css.map */

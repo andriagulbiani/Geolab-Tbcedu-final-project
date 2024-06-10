@@ -213,7 +213,6 @@ body {
       }
 
       .right {
-        outline: dotted 1px gray;
 
         img {
           width: 1080px;
@@ -221,5 +220,141 @@ body {
       }
     }
   }
+
+  .index-section-4 {
+    margin: 200px 0px;
+    width: 100%;
+
+    .index-section-4-div {
+
+      .index-section-4-text {
+        @include goFlex(column, center, center);
+        margin-bottom: 50px;
+
+        h2 {
+          @include roundFont(900, 40px, 55px);
+          color: #202125;
+        }
+      }
+
+      .index-apply-div {
+        @include goFlex(row, space-evenly, center);
+
+        // .courier {
+        //   text-align: center;
+         
+        //   h4 {
+        //     @include robotoFont(600, 20px);
+        //     color: #202125;
+        //     padding: 20px 0px 10px 0px;
+        //   }  
+        
+          
+          
+        // }
+
+        // .serve {
+        //   text-align: center;
+         
+        //   h4 {
+        //     @include robotoFont(600, 20px);
+        //     color: #202125;
+        //     padding: 20px 0px 10px 0px;
+        //   }  
+        
+          
+          
+        // }
+
+        div {
+          text-align: center;
+          margin: 50px 0px;
+         
+          h4 {
+            @include robotoFont(600, 20px);
+            color: #202125;
+            padding: 20px 0px 10px 0px;
+          }
+          
+          a {
+            @include robotoFont(500, 14px);
+            color: #009de0;
+
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            overflow: hidden;
+            padding-bottom: 4px;
+            position: relative;
+            text-decoration: none;
+            margin: auto auto 10px;
+          }
+
+          a:after {
+            border-bottom: 1px solid;
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            transition: transform .4s cubic-bezier(.01,.21,.35,1);
+            width: 100%;
+            transform: translateZ(0);
+            background-color: #009de0;
+          }
+        }
+      }
+    }
+  }
+
+  .index-footer {
+    width: 100%;
+    height: 450px;
+    background-color: #141414;
+
+
+    .index-footer-div {
+
+      .top {
+        @include goFlex (row, space-between, center);
+
+        div {
+          @include goFlex (column, flex-start, flex-start);
+          height: 160px;
+
+          h3 {
+            @include robotoFont(600, 18px);
+            color: #a7a7a7;
+          }
+
+          p {
+            @include robotoFont(400, 15px);
+            color: #ffffff
+          }
+        }
+
+        .footer-div-1 {
+          @include goFlex (column, space-between, flex-start);
+
+
+          .wolt {
+            width: 100px;
+            color: white;
+          }
+
+          .appstore {
+            width: 130px;
+            margin-top: 25px;
+          }
+
+          .playstore {
+            width: 150px;
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+
+  }
 }
+
 
