@@ -313,22 +313,24 @@ body {
 
 
     .index-footer-div {
+      @include goFlex(column);
 
       .top {
-        @include goFlex (row, space-between, center);
+        @include goFlex (row, space-between, flex-start);
 
         div {
           @include goFlex (column, flex-start, flex-start);
-          height: 160px;
 
           h3 {
             @include robotoFont(600, 18px);
             color: #a7a7a7;
+            margin-bottom: 10px
           }
 
           p {
             @include robotoFont(400, 15px);
-            color: #ffffff
+            color: #ffffff;
+            margin: 5px 0px;
           }
         }
 
@@ -351,6 +353,37 @@ body {
             margin-left: -10px;
           }
         }
+      }
+
+      .bottom {
+        @include goFlex(row, space-evenly, flex-end);
+
+        div { 
+
+          a {
+            @include robotoFont(400, 14px);
+            color: #ffffff;
+          }
+
+        }
+
+        .bottom-left {
+          @include goFlex(row, space-evenly, center);
+          width: 275px;
+        }
+
+        .bottom-center {
+          @include goFlex(row, space-evenly, center);
+          width: 480px;
+        }
+
+        .bottom-right {
+          p {
+            @include robotoFont(400, 14px);
+            color: #aaaaa1;
+          }
+        }
+
       }
     }
 

@@ -372,11 +372,18 @@ body .index-footer {
   height: 450px;
   background-color: #141414;
 }
+body .index-footer .index-footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
 body .index-footer .index-footer-div .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 body .index-footer .index-footer-div .top div {
@@ -385,7 +392,6 @@ body .index-footer .index-footer-div .top div {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 160px;
 }
 body .index-footer .index-footer-div .top div h3 {
   font-family: "Roboto";
@@ -393,6 +399,7 @@ body .index-footer .index-footer-div .top div h3 {
   font-size: 18px;
   line-height: 20px;
   color: #a7a7a7;
+  margin-bottom: 10px;
 }
 body .index-footer .index-footer-div .top div p {
   font-family: "Roboto";
@@ -400,6 +407,7 @@ body .index-footer .index-footer-div .top div p {
   font-size: 15px;
   line-height: 20px;
   color: #ffffff;
+  margin: 5px 0px;
 }
 body .index-footer .index-footer-div .top .footer-div-1 {
   display: flex;
@@ -419,4 +427,41 @@ body .index-footer .index-footer-div .top .footer-div-1 .appstore {
 body .index-footer .index-footer-div .top .footer-div-1 .playstore {
   width: 150px;
   margin-left: -10px;
+}
+body .index-footer .index-footer-div .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+body .index-footer .index-footer-div .bottom div a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+body .index-footer .index-footer-div .bottom .bottom-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 275px;
+}
+body .index-footer .index-footer-div .bottom .bottom-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 480px;
+}
+body .index-footer .index-footer-div .bottom .bottom-right p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #aaaaa1;
 }/*# sourceMappingURL=styles.css.map */
