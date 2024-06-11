@@ -1,0 +1,11 @@
+body {
+    @extend %my-container;
+
+    .about-us-header {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    
+}
