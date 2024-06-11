@@ -369,15 +369,19 @@ body .index-section-4 .index-section-4-div .index-apply-div div a:after {
 }
 body .index-footer {
   width: 100%;
-  height: 450px;
+  height: auto;
   background-color: #141414;
 }
 body .index-footer .index-footer-div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
+  margin: auto;
+  padding: 104px 30px 32px;
+  height: 100%;
+  max-width: 1200px;
 }
 body .index-footer .index-footer-div .top {
   display: flex;
@@ -385,6 +389,7 @@ body .index-footer .index-footer-div .top {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 45px;
 }
 body .index-footer .index-footer-div .top div {
   display: flex;
@@ -392,6 +397,8 @@ body .index-footer .index-footer-div .top div {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 175px;
+  height: 245px;
 }
 body .index-footer .index-footer-div .top div h3 {
   font-family: "Roboto";
@@ -412,7 +419,7 @@ body .index-footer .index-footer-div .top div p {
 body .index-footer .index-footer-div .top .footer-div-1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -431,7 +438,7 @@ body .index-footer .index-footer-div .top .footer-div-1 .playstore {
 body .index-footer .index-footer-div .bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
 }
@@ -445,7 +452,7 @@ body .index-footer .index-footer-div .bottom div a {
 body .index-footer .index-footer-div .bottom .bottom-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 275px;
